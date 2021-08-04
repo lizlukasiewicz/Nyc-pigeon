@@ -1,12 +1,17 @@
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
+//import Email from '../components/email'
 import {VscGithubInverted} from 'react-icons/vsc'
 import {GrInstagram, GrLinkedin} from 'react-icons/gr'
+import {SiJavascript} from 'react-icons/si'
 //import {FaCodepen, FaHackerrank} from 'react-icons/fa'
 //import {SiLeetcode} from 'react-icons/si'
 
 export default function Home() {
+  const handleClick = () => {
+
+  }
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-white">
       <Head>
@@ -47,7 +52,7 @@ export default function Home() {
           </div>
           <h4 className="text-lg text-left text-opacity-75 font-medium text-primary">I build things for the web</h4>
           <p className="text-md font-light text-primary">I'm a software engineer specializing in creating solutions for users</p>
-        <button className="bg-primary mt-10 p-3 border-2 text-md font-medium text-blue rounded-lg shadow-md transition duration-300 hover:bg-palette-4 hover:text-primary active:bg-palette-5">contact me</button>
+        <button className="bg-primary mt-10 p-3 border-2 text-md font-medium text-blue rounded-lg shadow-md transition duration-300 hover:bg-palette-4 hover:text-primary active:bg-palette-5"><a href="mailto:lizlukasiewicz@gmail.com">contact me</a></button>
         </div>
         <img src="/flushing.png" className="rounded-full -mr-10 flex-shrink"/>
         </div>
@@ -60,7 +65,7 @@ export default function Home() {
           <div className="col-span-3"><h2 className="text-xl font-extralight text-blue text-left">Tools & Proficiencies</h2> </div>
           <div><p className="text-lg font-medium">Languages</p>
             <ul>
-              <li className="font-light text-md">Javascript:</li>
+              <li className="font-light text-md"> Javascript</li>
               <li className="font-light text-md">Python</li>
               <li className="font-light text-md">Typescript</li>
               <li className="font-light text-md">HTML</li>
@@ -106,10 +111,10 @@ export default function Home() {
         
         <div className="w-3/4 grid grid-cols-2 gap-1">
           <div className="col-span-2"><h2 className="text-xl font-extralight text-blue text-center">Things I've Built</h2> </div>
-          <div className="bg-palette-1"><h1>Riders Guild:</h1> <img src="computer.png" /></div>
-          <div className=" bg-palette-4 "><img src="computer.png" /></div>
-          <div className="bg-palette-3"><img src="computer.png" /></div>
-          <div className="bg-primary"><img src="computer.png" /></div>
+          <div className="bg-palette-1"><h1 className="text-lg">Riders Guild</h1> <img src="computer.png" /></div>
+          <div className=" bg-palette-4 "><h1 className="text-lg text-primary">Falendar</h1><img src="computer.png" /></div>
+          <div className="bg-palette-3"><h1 className="text-lg text-primary">Dispatch</h1><img src="computer.png" /></div>
+          <div className="bg-primary"><h1 className="text-lg">Escape Noface</h1><img src="computer.png" /></div>
         </div>
       
       
