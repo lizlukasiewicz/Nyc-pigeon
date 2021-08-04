@@ -13,6 +13,7 @@ module.exports = {
     colors: {
       primary: '#F9FBF2',
       orange: '#FFE0B5',
+      gold: '#d4af37',
       green: '#76949F',
       blue: '#6A6B83',
       purple: '#2C1320',
@@ -20,12 +21,24 @@ module.exports = {
       white: '#F9FAFB'
     },
     fontFamily: { 
-      'sans': ['Roboto'],
-      'serif': ['Roboto']
+      'display': ['Roboto'],
+      'body': ['Roboto']
     },
     fontSize: {
-        lg: ['21px'],
-        xl: ['36px']
+        sm: ['9px'],
+        md: ['21px'],
+        lg: ['27px'],
+        xl: ['47px']
+    },
+    scale: {
+      25: '.25',
+      50: '.5',
+      75: '.75',
+      90: '.9',
+      100: '1',
+      125: '1.25',
+      150: '1.5',
+      200: '2',
     },
     extend: {},
   },

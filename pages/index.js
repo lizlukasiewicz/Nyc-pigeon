@@ -1,80 +1,85 @@
 import Head from 'next/head'
 import Header from '../components/header'
+import {VscGithubInverted} from 'react-icons/vsc'
+import {GrInstagram, GrLinkedin} from 'react-icons/gr'
+import {FaCodepen, FaHackerrank} from 'react-icons/fa'
+import {SiLeetcode} from 'react-icons/si'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-primary">
       <Head>
         <title>Elizabeth Lukasiewicz</title>
         <link rel="icon" href="/icon.png" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+          rel="preload"
+          as="style" 
+          href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+          />
+          <link 
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" 
+          media="print"
+          onLoad="this.media='all'"
+          />
+          <noscript>
+            <link 
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+            />
+          </noscript>
+
       </Head>
       <Header />
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center bg-primary">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full bg-palette-3">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue focus:text-blue-600"
-          >
-            <h3 className="text-lg font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-lg">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue focus:text-blue-600"
-          >
-            <h3 className="text-lg font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-lg">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue focus:text-blue-600"
-          >
-            <h3 className="text-lg font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-lg">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center ">
+        <div className="flex-row mt-16">
+        <div className="absolute z-30 bg-palette-4 w-1/3 h-1/2 p-5">
+          <p className="text-lg text-left font-light text-gold">Hey there my name is</p>
+          <h1 className="text-xl text-primary">Elizabeth Lukasiewicz</h1>
+          <h4 className="text-lg text-left text-opacity-75 font-medium text-primary">I build things for the web</h4>
+          <p className="text-md font-light text-primary">I'm a software engineer specializing in creating solutions for users</p>
+        <button className="bg-primary mt-10 p-3 border-2 text-md font-medium text-blue rounded-lg shadow-md transition duration-300 hover:bg-palette-4 hover:text-primary active:bg-palette-5">contact me</button>
         </div>
-      </main>
+        <img src="/flushing.png" className=" rounded-full"/>
+        </div>
+        
+        <div className="w-3/4 grid grid-cols-3 gap-4">
+          <div className="col-span-3"><h2 className="text-xl font-thin text-purple text-left">Tools & Proficiencies</h2> </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
 
-      <footer className="flex items-center justify-center w-full h-40 border-t bg-palette-5">
+        </div>
+      
+      
+      </main>
+      <div className="fixed items-end self-start space-y-5 bottom-10 left-20">
+        <ul className="flex-col space-y-8">
+          <li> <a href="https://github.com/lizlukasiewicz" ><VscGithubInverted className="text-purple transform scale-150"/></a> </li>
+          <li><a href="https://www.instagram.com/nycpigeon/"> <GrInstagram className="text-purple transform scale-150"/> </a> </li>
+          <li><a href="https://www.linkedin.com/in/elizabeth-lukasiewicz-a2904a59/"> <GrLinkedin className="text-purple transform scale-150"/> </a> </li>
+          {/* <li><a> <FaCodepen className="text-purple transform scale-150"/> </a> </li>
+          <li><a> <FaHackerrank className="text-purple transform scale-150"/> </a> </li>
+          <li><a><SiLeetcode className="text-purple transform scale-150"/></a></li> */}
+        </ul>
+        <div className="flex-col h-16 border-r-4 border-purple"></div>
+      </div>
+      <footer className="flex items-center justify-center w-full h-40 border-t bg-palette-3">
         <a
           className="flex items-center justify-center text-primary hover:text-orange"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/self.png" alt="" className="h-24 ml-20" />
+          <img src="/self.png" alt="circular portrait photo" className="h-24 ml-20" />
         </a>
       </footer>
     </div>
