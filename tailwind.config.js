@@ -8,7 +8,8 @@ module.exports = {
       'palette-1': '#FFE0B5',
       'palette-3': '#76949F',
       'palette-4': '#6A6B83',
-      'palette-5': '#2C1320'
+      'palette-5': '#2C1320',
+      white: '#F9FAFB'
     }),
     colors: {
       primary: '#F9FBF2',
@@ -45,7 +46,9 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
 //The PLUGINS section allows you to register plugins with Tailwind that can be used to 
 //generate extra utilities, components, base styles, or custom variants
