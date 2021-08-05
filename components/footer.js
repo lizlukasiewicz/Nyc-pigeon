@@ -10,7 +10,7 @@ export default function Footer() {
           </li>
           <li className="flex items-center text-primary hover:text-orange">
           <a>
-            <p>Resume: <span className="hover:underline">Download</span></p>
+            <p>Resume: <a href="/resume.pdf" download="/resume.pdf" target="_blank">Download</a></p>
           </a>
           </li>
         </ul>

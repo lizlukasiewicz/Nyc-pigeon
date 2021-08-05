@@ -109,28 +109,36 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="w-3/4 grid grid-cols-2 gap-1">
+        <div className="w-4/5 grid grid-cols-2 gap-1">
           <div className="col-span-2"><h2 className="text-xl font-extralight text-blue text-center">Things I've Built</h2> </div>
           <div className="bg-palette-1">
             <div><h1 className="text-lg">Riders Guild</h1>
-              <p>Next.js, MongoDB, NextAuth, React <br></br> </p>
+              <p><span className="font-medium">Next.js, MongoDB, NextAuth, React </span><br></br> 
+              
+              </p>
             </div> 
           </div>
           <div className=" bg-palette-4 ">
             <div><h1 className="text-lg text-primary">Falendar</h1>
-            <p>React.js, Styled-Components, MaterialUI, MongoDB, Express.js, </p>
+            <p><span className="font-medium">React.js, Styled-Components, MaterialUI, MongoDB, Express.js</span><br></br> 
+            
+            </p>
             </div>
           </div>
           <div className="bg-palette-3">
             <div>
             <h1 className="text-lg text-primary">Dispatch</h1>
-            <p>Sequelize, Express, Mapbox, PostgreSQL</p>
+            <p><span className="font-meium">Sequelize, Express, Mapbox, PostgreSQL</span><br></br>
+            
+            </p>
             </div>
           </div>
           <div className="bg-primary">
             <div>
             <h1 className="text-lg">Escape Noface</h1>
-            <p>JavaScript, HTML Canvas, HTML, CSS</p>
+            <p><span className="font-medium">JavaScript, HTML Canvas, HTML, CSS</span><br></br> 
+            
+            </p>
             </div>
           </div>
         </div>
