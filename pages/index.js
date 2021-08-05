@@ -111,10 +111,28 @@ export default function Home() {
         
         <div className="w-3/4 grid grid-cols-2 gap-1">
           <div className="col-span-2"><h2 className="text-xl font-extralight text-blue text-center">Things I've Built</h2> </div>
-          <div className="bg-palette-1"><h1 className="text-lg">Riders Guild</h1> <img src="computer.png" /></div>
-          <div className=" bg-palette-4 "><h1 className="text-lg text-primary">Falendar</h1><img src="computer.png" /></div>
-          <div className="bg-palette-3"><h1 className="text-lg text-primary">Dispatch</h1><img src="computer.png" /></div>
-          <div className="bg-primary"><h1 className="text-lg">Escape Noface</h1><img src="computer.png" /></div>
+          <div className="bg-palette-1">
+            <div><h1 className="text-lg">Riders Guild</h1>
+              <p>Next.js, MongoDB, NextAuth, React <br></br> </p>
+            </div> 
+          </div>
+          <div className=" bg-palette-4 ">
+            <div><h1 className="text-lg text-primary">Falendar</h1>
+            <p>React.js, Styled-Components, MaterialUI, MongoDB, Express.js, </p>
+            </div>
+          </div>
+          <div className="bg-palette-3">
+            <div>
+            <h1 className="text-lg text-primary">Dispatch</h1>
+            <p>Sequelize, Express, Mapbox, PostgreSQL</p>
+            </div>
+          </div>
+          <div className="bg-primary">
+            <div>
+            <h1 className="text-lg">Escape Noface</h1>
+            <p>JavaScript, HTML Canvas, HTML, CSS</p>
+            </div>
+          </div>
         </div>
       
       
