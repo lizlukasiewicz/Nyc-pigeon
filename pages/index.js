@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 //import Email from '../components/email'
-import {VscGithubInverted} from 'react-icons/vsc'
+import {VscGithubInverted, VscGithub} from 'react-icons/vsc'
 import {GrInstagram, GrLinkedin} from 'react-icons/gr'
+import {MdPhonelink} from 'react-icons/md'
 //import {SiJavascript} from 'react-icons/si'
 //import {FaCodepen, FaHackerrank} from 'react-icons/fa'
 //import {SiLeetcode} from 'react-icons/si'
@@ -106,37 +107,45 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="w-4/5 grid grid-cols-2 gap-1">
+        <div className="w-10/12 grid grid-cols-2 gap-1">
           <div className="col-span-2"><h2 className="text-xl font-extralight text-blue text-center">Things I've Built</h2> </div>
           <div className="bg-palette-1">
             <div><h1 className="text-lg">Riders Guild</h1>
               <p><span className="font-medium">Next.js, MongoDB, NextAuth, React </span><br></br> 
-              
+              <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" ><VscGithub className="transform scale-150"/></a>
+              <a href="https://capstone-nine.vercel.app/" target="_blank" ><MdPhonelink className="transform scale-150"/> Riders Guild</a>
               </p>
             </div> 
+            <img src="/riders-guild.gif" className="object-left"/>
           </div>
           <div className=" bg-palette-4 ">
             <div><h1 className="text-lg text-primary">Falendar</h1>
             <p><span className="font-medium">React.js, Styled-Components, MaterialUI, MongoDB, Express.js</span><br></br> 
-            
+            <a href="" target="_blank" > <VscGithub className="transform scale-150"/></a>
+            <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" ><MdPhonelink className="transform scale-150"/>Falendar</a>
             </p>
             </div>
+            <img src="/falendar.gif" />
           </div>
           <div className="bg-palette-3">
             <div>
             <h1 className="text-lg text-primary">Dispatch</h1>
             <p><span className="font-meium">Sequelize, Express, Mapbox, PostgreSQL</span><br></br>
-            
+            <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform scale-150"/></a>
+            <a href="" target="_blank" > <MdPhonelink className="transform scale-150"/>Dispatch</a>
             </p>
             </div>
+            <img src="/dispatch.gif" />
           </div>
           <div className="bg-primary">
             <div>
             <h1 className="text-lg">Escape Noface</h1>
             <p><span className="font-medium">JavaScript, HTML Canvas, HTML, CSS</span><br></br> 
-            
+            <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" > <VscGithub className="transform scale-150"/></a>
+            <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" ><MdPhonelink className="transform scale-150"/>Escape Noface</a>
             </p>
             </div>
+            <img src="/escape-noface.gif" />
           </div>
         </div>
       
