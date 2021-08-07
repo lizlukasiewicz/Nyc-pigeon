@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+
 export default function Header() {
     return(
         <nav className="relative border-b-4 border-gold w-full bg-primary">
@@ -12,7 +13,7 @@ export default function Header() {
                     </div>
                     
                     <div className="flex-shrink justify-end space-x-5">
-                        <Link href="/about">
+                        <Link href="/#about">
                             <a className="whitespace-nowrap flex-shrink text-md font-medium transition duration-500 ease-in-out hover:text-blue ">    
                             About Me
                             </a>
@@ -22,7 +23,7 @@ export default function Header() {
                             Project
                         </a>
                         </Link>
-                        <Link href="/tools" >
+                        <Link href="/#tools">
                         <a className=" flex-shrink text-md font-medium transition duration-500 ease-in-out hover:text-blue">
                             Tools 
                         </a>

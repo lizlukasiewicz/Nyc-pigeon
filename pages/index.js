@@ -4,14 +4,11 @@ import Footer from '../components/footer'
 //import Email from '../components/email'
 import {VscGithubInverted} from 'react-icons/vsc'
 import {GrInstagram, GrLinkedin} from 'react-icons/gr'
-import {SiJavascript} from 'react-icons/si'
+//import {SiJavascript} from 'react-icons/si'
 //import {FaCodepen, FaHackerrank} from 'react-icons/fa'
 //import {SiLeetcode} from 'react-icons/si'
 
 export default function Home() {
-  const handleClick = () => {
-
-  }
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-white">
       <Head>
@@ -59,10 +56,10 @@ export default function Home() {
        
         <div className="w-3/4 grid grid-cols-2 gap-1">
         <div><img src="image1.png" /></div>
-        <div className="bg-primary"><h1 className="text-xl text-blue font-light text-center">About Me: </h1><p className="text-md antialiased"><br></br>A Full-Stack Software Engineer with a background in performing arts, I am composed of strong interpersonal skills and driven by creating streamlined, user-friendly solutions with a pragmatic approach. I employ my skills with back-end JavaScript and Python to create organized and automated software that is easily approachable for users. With a healthy serving of ambition, I am always looking to challenge myself.  </p></div>
+        <div className="bg-primary" title="about" id="about"><h1 className="text-xl text-blue font-light text-center">About Me: </h1><p className="text-md antialiased"><br></br>A Full-Stack Software Engineer with a background in performing arts, I am composed of strong interpersonal skills and driven by creating streamlined, user-friendly solutions with a pragmatic approach. I employ my skills with back-end JavaScript and Python to create organized and automated software that is easily approachable for users. With a healthy serving of ambition, I am always looking to challenge myself.  </p></div>
       </div>
         <div className="w-3/4 grid grid-cols-3 my-5 gap-4">
-          <div className="col-span-3"><h2 className="text-xl font-extralight text-blue text-left">Tools & Proficiencies</h2> </div>
+          <div className="col-span-3"><h2 className="text-xl font-extralight text-blue text-left" title="tools" id="tools">Tools & Proficiencies</h2> </div>
           <div><p className="text-lg font-medium">Languages</p>
             <ul>
               <li className="font-light text-md"> Javascript</li>
