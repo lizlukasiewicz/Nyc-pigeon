@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Image from 'next/image'
-//import Email from '../components/email'
+import Link from 'next/link'
 import {VscGithubInverted, VscGithub} from 'react-icons/vsc'
 import {GrInstagram, GrLinkedin} from 'react-icons/gr'
 import {MdPhonelink} from 'react-icons/md'
@@ -56,12 +56,12 @@ export default function Home() {
         <img src="/flushing.png" className="rounded-full -mr-10 flex-shrink"/>
         </div>
        
-        <div className="w-3/4 grid grid-cols-2 gap-1">
+        <div className="w-3/4 grid grid-cols-2 gap-1 py-5">
         <div><img src="image1.png" /></div>
         <div className="bg-primary" title="about" id="about"><h1 className="text-xl text-blue font-light text-center">About Me: </h1><p className="text-md antialiased"><br></br>As a Full-Stack Software Engineer with a background in performing arts, I am composed of strong interpersonal skills and driven by creating streamlined, user-friendly solutions with a pragmatic approach. I employ my skills with back-end JavaScript and Python to create organized and automated software that is easily approachable for users. With a healthy serving of ambition, I am always looking to challenge myself.  </p></div>
       </div>
         <div className="w-3/4 grid grid-cols-3 my-5 gap-4">
-          <div className="col-span-3"><h2 className="text-xl font-extralight text-blue text-left" title="tools" id="tools">Tools & Proficiencies</h2> </div>
+          <div className="col-span-3"><h2 className="text-xl font-light text-blue text-left" title="tools" id="tools">Tools & Proficiencies</h2> </div>
           <div><p className="text-lg font-medium">Languages</p>
             <ul>
               <li className="font-light text-md"> Javascript</li>
@@ -108,11 +108,11 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="w-10/12 grid grid-cols-2 gap-1">
-          <div className="col-span-2"><h2 className="text-xl font-extralight text-blue text-center">Things I've Built</h2> </div>
+        <div className="w-10/12 grid grid-cols-2 gap-1 py-5">
+          <div className="col-span-2"><h2 className="text-xl font-light text-blue text-center">Things I've Built</h2> </div>
           <div className="bg-palette-1">
-            <div><h1 className="text-lg text-blue hover:text-purple">Riders Guild</h1>
-              <p><span className="font-medium text-blue">Next.js, MongoDB, NextAuth, React </span><br></br></p>
+            <div><h1 className="text-lg text-blue hover:text-purple"><Link href="/projects/#riders-guild">Riders Guild</Link></h1>
+              <p><span className="font-medium text-blue">Next.js, MongoDB, Mongoose, NextAuth, React </span><br></br></p>
               <div className="flex justify-evenly py-3">
               <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
               <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
@@ -121,7 +121,7 @@ export default function Home() {
             <Image src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" width="450" height="250"/>
           </div>
           <div className=" bg-palette-4 ">
-            <div><h1 className="text-lg text-primary hover:text-orange">Falendar</h1>
+            <div><h1 className="text-lg text-primary hover:text-orange"><Link href="/projects/#falendar">Falendar</Link></h1>
             <p><span className="font-medium text-primary">React.js, Styled-Components, MaterialUI, MongoDB, Express.js</span><br></br></p> 
             <div className="flex justify-evenly py-3">
             <a href="https://github.com/lizlukasiewicz/Collab-MERN-Client" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
@@ -132,8 +132,8 @@ export default function Home() {
           </div>
           <div className="bg-palette-3">
             <div>
-            <h1 className="text-lg text-primary hover:text-orange">Dispatch</h1>
-            <p><span className="font-medium text-primary">Sequelize, Express, Mapbox, PostgreSQL</span><br></br></p>
+            <h1 className="text-lg text-primary hover:text-orange"><Link href="/projects/#dispatch">Dispatch</Link></h1>
+            <p><span className="font-medium text-primary">Sequelize, Express.js, Mapbox, PostgreSQL</span><br></br></p>
             <div className="flex justify-evenly py-3">
             <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
@@ -143,7 +143,7 @@ export default function Home() {
           </div>
           <div className="bg-primary">
             <div>
-            <h1 className="text-lg text-blue hover:text-purple">Escape Noface</h1>
+            <h1 className="text-lg text-blue hover:text-purple"><Link href="/projects/#escape-noface">Escape Noface</Link></h1>
             <p><span className="font-medium text-blue">JavaScript, HTML Canvas, HTML, CSS</span><br></br></p>
             <div className="flex justify-evenly py-3">
             <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>

@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import {VscGithubInverted} from 'react-icons/vsc'
+import {VscGithubInverted, VscGithub} from 'react-icons/vsc'
 import {GrInstagram, GrLinkedin} from 'react-icons/gr'
+import {MdPhonelink} from 'react-icons/md'
 import Image from 'next/image'
 
 export default function Projects() {
@@ -37,33 +38,52 @@ export default function Projects() {
       </Head>
       <Header />
       <main className="flex flex-col items-center w-full flex-1 px-20 text-center ">
-        <div className="w-5/6 grid grid-cols-2 gap-1">
-          <div className="col-span-2"><h2 className="text-xl font-extralight text-blue text-center">Things I've Built</h2> </div>
+        <div className="w-5/6 grid grid-cols-2 gap-1 space-y-6">
+          <div className="col-span-2"><h2 className="text-xl font-light text-blue text-center py-5 tracking-wider">Things I've Built</h2> </div>
           
-          <div className="bg-palette-1">
-            
+          <div className="bg-palette-1 h-96 flex items-center justify-center" id="riders-guild">
+          <Image src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" width="450" height="250"/>
           </div>
-          <div className="bg-palette-1"><h1 className="text-lg">Riders Guild</h1>
-              <h4>Next.js, MongoDB, NextAuth, React</h4> 
+          <div className="bg-palette-1 h-96 overflow-y-auto"><h1 className="text-lg font-medium text-blue hover:text-purple"><a href="https://capstone-nine.vercel.app/" target="_blank">Riders Guild</a></h1>
+              <h4 className="font-medium text-blue">Next.js, MongoDB, Mongoose, NextAuth, React</h4>
+              <div className="flex justify-evenly py-3">
+              <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+              <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+              </div>
               <p>A Blog built with NextAuth for user authentication and database encryption, RESTful API functionality for posts and comments between users.<br></br> 
               Learned and implemented Next.js and launched the app for a 5-Day Sprint.
               </p>
           </div> 
-          <div className=" bg-palette-4 ">
-            <div><h1 className="text-lg text-primary">Falendar</h1>
-            <h4>React.js, Styled-Components, MaterialUI, MongoDB, Express.js</h4><p>
-            Utilized React Calendar Component to record and render Schedules stored within MongoDB that 
-            could be synchronized between multiple users, user login infois also encrypted.<br></br>
+          <div className=" bg-palette-4 h-96 overflow-y-auto" id="falendar">
+            <h1 className="text-lg text-primary hover:text-orange"><a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank">Falendar</a></h1>
+            <h4 className="font-medium text-primary">React.js, Styled-Components, MaterialUI, MongoDB, Express.js</h4>
+            <div className="flex justify-evenly py-3">
+            <a href="https://github.com/lizlukasiewicz/Collab-MERN-Client" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            </div>
+            <p>The goal was to make a stripped down calendar which is easy to read at a glance. Regular events 
+              are available at the click of a button, but your daily itinerary is immediately available, which 
+              is really what most people use most to stay on top of the days activities.
+              <br></br>Utilized React Calendar Component to record and render Schedules stored within MongoDB that 
+            could be synchronized between multiple users, user login info is also encrypted.<br></br>
             Worked within a team to build web app complete with GitHub manager, experienced team workflow, 
             merge conflicts, and debugging.
             </p>
-            </div>
           </div>
-          <div className="bg-palette-3">
-            <div>
-            <h1 className="text-lg text-primary">Dispatch</h1>
-            <h4>Sequelize, Express, Mapbox, PostgreSQL</h4><p>
-            Full stack Express and Postgres app that uses Sequelize as an ORM to interact with protected 
+          <div className=" bg-palette-4 h-96 flex items-center justify-center">
+          <Image src="/falendar.gif" alt="a gif of the Falendar webpage" width="450" height="250"/>
+          </div>
+          <div className="bg-palette-3 h-96 flex items-center justify-center" id="dispatch">
+          <Image src="/dispatch.gif" alt="a gif of the Dispatch webpage" width="450" height="250"/>
+          </div>
+          <div className="bg-palette-3 h-96 overflow-y-auto">
+            <h1 className="text-lg text-primary hover:text-orange"><a href="https://dispatch-lite.herokuapp.com/" target="_blank">Dispatch</a></h1>
+            <h4 className="font-medium text-primary">Sequelize, Express.js, Mapbox, PostgreSQL</h4>
+            <div className="flex justify-evenly py-3">
+            <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            </div>
+            <p>Full stack Express and Postgres app that uses Sequelize as an ORM to interact with protected 
             customer data with full CRUD functionality for each user. Data is run through the Mapbox API 
             which geocodes customer addresses and renders them on map. Users are able to chart out zones 
             on the map and the app displays the corresponding zone the geocoded data is within.
@@ -72,19 +92,25 @@ export default function Projects() {
             least one API. I used this opportunity to create a potential solution for dispatchers working for 
             delivery services that lacked tools to automate the repetitive and time consuming aspects of their job.
             </p>
-            </div>
           </div>
-          <div className="bg-primary">
-
-          </div>
-            <div className="bg-primary"> 
-            <h1 className="text-lg">Escape Noface</h1>
-            <h4>JavaScript, HTML Canvas, HTML, CSS</h4><p>
-            A single player online game that utilized the Javascript event loop and
+            <div className="bg-primary h-96 overflow-y-auto" id="escape-noface"> 
+            <h1 className="text-lg font-medium text-blue hover:text-purple">Escape Noface</h1>
+            <h4 className="font-medium text-blue">JavaScript, HTML Canvas, HTML, CSS</h4>
+            <div className="flex justify-evenly py-3">
+            <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+            <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+            </div> 
+            <p>Sucess! NoFace has eaten the medicine you got from the River Spirit, But now he's projectile vomiting 
+              all the contents of his massive stomach and he's coming to get you! You are Chihiro running through the 
+              bathhouse to escape the wrath of NoFace, but the other employees of the bathhouse are in your way. Avoid 
+              these obstacles and make it out of the bathhouse before NoFace eats you to win the game!
+              <br></br>A single player online game that utilized the Javascript event loop and
             object-oriented design to create gravitational elements, collision detection, 
             random obstacle placement and movement, animated sprite sheets, as well as scrolling backgrounds.</p>
             </div>
-          
+            <div className="bg-primary h-96 flex items-center justify-center">
+            <Image src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" width="450" height="250"/>
+            </div>
         </div>
         </main>
         <div className="fixed items-end self-start space-y-5 bottom-10 left-20">
