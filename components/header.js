@@ -12,9 +12,9 @@ export default function Header() {
                         </Link>
                     </div>
                     
-                    <div className="flex-shrink justify-end space-x-5">
+                    <div className="flex-shrink justify-end space-x-5 sm:space-x-0">
                         <Link href="/#about">
-                            <a className="whitespace-nowrap flex-shrink text-md font-medium transition duration-500 ease-in-out hover:text-blue ">    
+                            <a className="whitespace-nowrap flex-shrink text-md font-medium transition duration-500 ease-in-out hover:text-blue">    
                             About Me
                             </a>
                         </Link>

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Image from 'next/image'
 import {VscGithubInverted, VscGithub} from 'react-icons/vsc'
 import {GrInstagram, GrLinkedin} from 'react-icons/gr'
 import {MdEmail} from 'react-icons/md'
@@ -37,11 +38,14 @@ export default function Contact() {
       </Head>
       <Header />
       <main className="flex flex-col items-center w-full flex-1 px-20 text-center ">
-       <ul>
-        <li><a href="mailto:lizlukasiewicz@gmail.com"> <MdEmail /> </a> lizlukasiewicz@gmail.com </li>
-        <li><a href="https://www.linkedin.com/in/elizabeth-lukasiewicz-a2904a59/" target="_blank"> <GrLinkedin/>  linkedin.com/in/elizabeth-lukasiewicz/ </a></li>
+      <div className="w-5/6 grid grid-cols-2 gap-1 space-y-6">
+      <Image src="/image2.jpg" alt="image of Elizabeth" width="1014" height="1501"  />
+       <ul className="flex flex-col justify-start space-x-4">
+        <li className="inline-flex space-x-4"><a href="mailto:lizlukasiewicz@gmail.com"> <MdEmail className="transform scale-150"/> </a><p>lizlukasiewicz@gmail.com </p></li>
+        <li className="inline-flex space-x-4"><a href="https://www.linkedin.com/in/elizabeth-lukasiewicz-a2904a59/" target="_blank"> <GrLinkedin className="transform scale-150"/></a><p>linkedin.com/in/elizabeth-lukasiewicz/</p></li>
            
-        </ul> 
+        </ul>
+        </div> 
       </main>
       <div className="fixed items-end self-start space-y-5 bottom-10 left-20">
         <ul className="flex-col space-y-8">
