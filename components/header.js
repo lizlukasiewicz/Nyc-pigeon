@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Header() {
     return(
         <nav className="relative border-b-4 border-gold w-full bg-primary">
-            <div className="max-w-7xl mx-auto px-4 sm:px-2">
+            <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center py-6 space-x-5 flex-shrink md:justify-between md:space-x-5 lg:justify-between">
                     <div className="flex justify-start flex-shrink">
                         <Link href="/">
@@ -12,7 +12,7 @@ export default function Header() {
                         </Link>
                     </div>
                     
-                    <div className="flex-shrink justify-end space-x-5 sm:space-x-0">
+                    <div className="flex-shrink justify-end space-x-5">
                         <Link href="/#about">
                             <a className="whitespace-nowrap flex-shrink text-md font-medium transition duration-500 ease-in-out hover:text-blue">    
                             About Me
