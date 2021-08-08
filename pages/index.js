@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import Image from 'next/image'
 import Link from 'next/link'
 import {VscGithubInverted, VscGithub} from 'react-icons/vsc'
 import {GrInstagram, GrLinkedin} from 'react-icons/gr'
@@ -44,20 +43,20 @@ export default function Home() {
       
       <main className="flex flex-col items-center w-full flex-1 px-20 text-center ">
         <div className="flex-row justify-between mt-16">
-        <div className="absolute content-center z-30 bg-palette-4 bg-opacity-95 -ml-20 w-1/3 h-1/2 p-5">
-          <p className="text-lg text-left font-extralight text-gold">Hey there my name is</p>
+        <div className="absolute content-center z-30 bg-palette-4 bg-opacity-95 -ml-20 sm:w-1/3 md:h-1/2 p-5">
+          <p className="md:text-lg sm:text-sm text-left font-extralight text-gold">Hey there my name is</p>
           <div className="ml-10 py-3">
-          <p className="text-xl leading-none text-left text-primary">Elizabeth <br></br>Lukasiewicz</p>
+          <p className="md:text-xl sm:text-lg leading-none text-left text-primary">Elizabeth <br></br>Lukasiewicz</p>
           </div>
-          <h4 className="text-lg text-left text-opacity-75 font-medium text-primary">I build things for the web</h4>
-          <p className="text-md font-light text-primary">I'm a software engineer specializing in creating solutions for users</p>
-        <button className="bg-primary mt-10 p-3 border-2 text-md font-medium text-blue rounded-lg shadow-md transition duration-300 hover:bg-palette-4 hover:text-primary active:bg-palette-5"><a href="mailto:lizlukasiewicz@gmail.com">contact me</a></button>
+          <h4 className="md:text-lg sm:text-sm text-left text-opacity-75 font-medium text-primary">I build things for the web</h4>
+          <p className="md:text-md sm:text-sm font-light text-primary">I'm a software engineer specializing in creating solutions for users</p>
+        <button className="bg-primary mt-10 sm:p-3 border-2 sm:text-md font-medium text-blue rounded-lg shadow-md transition duration-300 hover:bg-palette-4 hover:text-primary active:bg-palette-5"><a href="mailto:lizlukasiewicz@gmail.com">contact me</a></button>
         </div>
-        <img src="/flushing.png" className="rounded-full -mr-10 flex-shrink"/>
+        <img src="/flushing.png" className="rounded-full -mr-10 md:flex-shrink-0"/>
         </div>
        
-        <div className="w-3/4 grid grid-cols-2 gap-1 py-5">
-        <div><img src="image1.png" /></div>
+        <div className="w-3/4 grid grid-cols-2 gap-1 py-5 ">
+        <div><img src="image1.png" className="md:flex-shrink-0"/></div>
         <div className="bg-primary" title="about" id="about"><h1 className="text-xl text-blue font-light text-center">About Me: </h1><p className="text-md antialiased"><br></br>As a Full-Stack Software Engineer with a background in performing arts, I am composed of strong interpersonal skills and driven by creating streamlined, user-friendly solutions with a pragmatic approach. I employ my skills with back-end JavaScript and Python to create organized and automated software that is easily approachable for users. With a healthy serving of ambition, I am always looking to challenge myself.  </p></div>
       </div>
         <div className="w-3/4 grid grid-cols-3 my-5 gap-4">
@@ -118,7 +117,7 @@ export default function Home() {
               <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
               </div>
             </div> 
-            <Image src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" width="450" height="250"/>
+            <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" className="p-2"  width="450" height="250"/>
           </div>
           <div className=" bg-palette-4 ">
             <div><h1 className="text-lg text-primary hover:text-orange"><Link href="/projects/#falendar">Falendar</Link></h1>
@@ -128,7 +127,7 @@ export default function Home() {
             <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
             </div>
-            <Image src="/falendar.gif" alt="a gif of the Falendar webpage" width="450" height="250"/>
+            <img src="/falendar.gif" alt="a gif of the Falendar webpage" className="p-2" width="450" height="250"/>
           </div>
           <div className="bg-palette-3">
             <div>
@@ -139,7 +138,7 @@ export default function Home() {
             <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
             </div>
-            <Image src="/dispatch.gif" alt="a gif of the Dispatch webpage" width="450" height="250"/>
+            <img src="/dispatch.gif" alt="a gif of the Dispatch webpage" className="p-2" width="450" height="250"/>
           </div>
           <div className="bg-primary">
             <div>
@@ -150,7 +149,7 @@ export default function Home() {
             <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
             </div> 
             </div>
-            <Image src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" width="450" height="250"/>
+            <img src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" className="p-2" width="450" height="250"/>
           </div>
         </div>
       
