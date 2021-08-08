@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import {VscGithubInverted} from 'react-icons/vsc'
 import {GrInstagram, GrLinkedin} from 'react-icons/gr'
+import Image from 'next/image'
 
 export default function Projects() {
     return(

@@ -20,7 +20,7 @@ export default function Header() {
                         </Link>
                         <Link href="/projects" >
                         <a className="flex-shrink text-md font-medium transition duration-500 ease-in-out hover:text-blue">
-                            Project
+                            Projects
                         </a>
                         </Link>
                         <Link href="/#tools">
