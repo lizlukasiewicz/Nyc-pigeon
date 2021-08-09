@@ -5,7 +5,7 @@ export default function Header() {
     return(
         <nav className="relative border-b-4 border-gold w-full bg-primary">
             <div className="max-w-7xl mx-auto px-4">
-                <div className="flex justify-between items-center py-6 space-x-5 flex-shrink md:justify-between md:space-x-5 lg:justify-between">
+                <div className="flex justify-between items-center md:py-6 space-x-5 flex-shrink md:justify-between md:space-x-5 lg:justify-between">
                     <div className="flex justify-start flex-shrink">
                         <Link href="/">
                             <img className="md:h-20 w-auto motion-safe:hover:animate-spin" src="/icon.png" alt="Pigeon logo" />
