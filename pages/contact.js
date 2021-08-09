@@ -38,7 +38,7 @@ export default function Contact() {
       <Header />
       <main className="flex flex-col items-center w-full flex-1 px-20 text-center ">
       <div className="w-5/6 grid grid-cols-2 gap-1 space-y-6">
-      <img src="/image2.jpg" alt="image of Elizabeth" width="1014" height="1501"  />
+      <img src="/image2.jpg" alt="image of Elizabeth" width="994" height="1427"  />
        <ul className="flex flex-col justify-start space-x-4">
         <li className="inline-flex space-x-4"><a href="mailto:lizlukasiewicz@gmail.com"> <MdEmail className="transform scale-150"/> </a><p>lizlukasiewicz@gmail.com </p></li>
         <li className="inline-flex space-x-4"><a href="https://www.linkedin.com/in/elizabeth-lukasiewicz-a2904a59/" target="_blank"> <GrLinkedin className="transform scale-150"/></a><p>linkedin.com/in/elizabeth-lukasiewicz/</p></li>
