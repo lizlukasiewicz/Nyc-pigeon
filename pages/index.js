@@ -42,7 +42,7 @@ export default function Home() {
       <Header />
       
       <main className="flex flex-col items-center w-full flex-1 px-20 text-center ">
-        <div className="flex-row justify-between md:mt-16">
+        <div className="flex-row md:justify-between md:mt-16">
         <div className="absolute content-center z-30 bg-palette-4 bg-opacity-95 -ml-20 sm:w-1/3 md:h-1/2 md:p-5">
           <p className="md:text-lg sm:text-sm text-left font-extralight text-gold">Hey there my name is</p>
           <div className="ml-10 py-3">
@@ -55,7 +55,7 @@ export default function Home() {
         <img src="/flushing.png" className="rounded-full -mr-10 md:flex-shrink-0"/>
         </div>
        
-        <div className="w-3/4 grid grid-cols-2 gap-1 py-5 md:flex">
+        <div className="md:w-3/4 grid grid-cols-2 gap-1 py-5 md:flex">
         <img src="/image1.png" width="400" height="382" className="md:float-left md:flex-shrink-0"/>
         <div className="bg-primary md:h-96 overflow-y-auto" title="about" id="about">
           <h1 className="md:text-xl text-blue font-light md:text-center">About Me: </h1>
@@ -65,7 +65,7 @@ export default function Home() {
           serving of ambition, I am always looking to challenge myself.  </p>
         </div>
       </div>
-        <div className="w-3/4 grid grid-cols-3 my-5 gap-4">
+        <div className="md:w-3/4 grid grid-cols-3 my-5 gap-4">
           <div className="col-span-3"><h2 className="md:text-xl font-light text-blue text-left" title="tools" id="tools">Tools & Proficiencies</h2> </div>
           <div><p className="md:text-lg font-medium">Languages</p>
             <ul>
@@ -113,17 +113,17 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="w-10/12 grid grid-cols-2 gap-1 md:py-5">
+        <div className="md:w-10/12 grid grid-cols-2 gap-1 md:py-5">
           <div className="col-span-2"><h2 className="md:text-xl md:font-light text-blue text-center">Things I've Built</h2> </div>
           <div className="bg-palette-1">
             <div><h1 className="md:text-lg font-medium text-blue hover:text-purple"><Link href="/projects/#riders-guild">Riders Guild</Link></h1>
-              <p><span className="font-medium text-blue">Next.js, MongoDB, Mongoose, NextAuth, React </span><br></br></p>
+              <p><span className="md:text-md font-medium text-blue">Next.js, MongoDB, Mongoose, NextAuth, React </span><br></br></p>
               <div className="flex justify-evenly md:py-3">
               <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
               <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
               </div>
             </div> 
-            <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" className="md:p-2"  width="450" height="250"/>
+            <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" className="p-2"  width="450" height="250"/>
           </div>
           <div className=" bg-palette-4 ">
             <div><h1 className="md:text-lg text-primary hover:text-orange"><Link href="/projects/#falendar">Falendar</Link></h1>
@@ -133,7 +133,7 @@ export default function Home() {
             <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
             </div>
-            <img src="/falendar.gif" alt="a gif of the Falendar webpage" className="md:p-2" width="450" height="250"/>
+            <img src="/falendar.gif" alt="a gif of the Falendar webpage" className="p-2" width="450" height="250"/>
           </div>
           <div className="bg-palette-3">
             <div>
@@ -144,7 +144,7 @@ export default function Home() {
             <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
             </div>
-            <img src="/dispatch.gif" alt="a gif of the Dispatch webpage" className="md:p-2" width="450" height="250"/>
+            <img src="/dispatch.gif" alt="a gif of the Dispatch webpage" className="p-2" width="450" height="250"/>
           </div>
           <div className="bg-primary">
             <div>
@@ -155,13 +155,13 @@ export default function Home() {
             <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
             </div> 
             </div>
-            <img src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" className="md:p-2" width="450" height="250"/>
+            <img src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" className="p-2" width="450" height="250"/>
           </div>
         </div>
       
       
       </main>
-      <div className="fixed items-end self-start space-y-5 bottom-10 left-20">
+      <div className="md:fixed items-end self-start space-y-5 bottom-10 left-20">
         <ul className="flex-col space-y-8">
           <li> <a href="https://github.com/lizlukasiewicz" target="_blank"><VscGithubInverted className="md:text-purple transform scale-150"/></a> </li>
           <li><a href="https://www.instagram.com/nycpigeon/" target="_blank"> <GrInstagram className="md:text-purple transform scale-150"/> </a> </li>
