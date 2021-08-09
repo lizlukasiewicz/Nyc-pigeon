@@ -1,7 +1,7 @@
 //import Link from 'next/link'
 export default function Footer() {
     return(
-        <footer className="flex items-center justify-center w-full h-40 border-t bg-palette-5">
+        <footer className="flex items-center justify-center w-full md:h-40 border-t bg-palette-5">
         <ul className="">
           <li className="flex items-center text-primary hover:text-orange">
             <a href="mailto:lizlukasiewicz@gmail.com">
