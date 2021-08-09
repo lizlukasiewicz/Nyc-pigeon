@@ -38,7 +38,7 @@ export default function Projects() {
       </Head>
       <Header />
       <main className="flex flex-col items-center w-full flex-1 md:px-20 text-center ">
-        <div className="md:w-5/6 grid grid-cols-2 gap-1 space-y-6">
+        <div className="md:w-5/6 md:grid grid-cols-2 gap-1 space-y-6">
           <div className="col-span-2"><h2 className="text-xl font-light text-blue text-center md:py-5 tracking-wider">Things I've Built</h2> </div>
           
           <div className="bg-palette-1 md:h-96 flex items-center justify-center" id="riders-guild">

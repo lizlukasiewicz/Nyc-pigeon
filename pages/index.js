@@ -42,7 +42,7 @@ export default function Home() {
       <Header />
       
       <main className="flex flex-col items-center w-full flex-1 px-20 text-center ">
-        <div className="flex-row md:justify-between md:mt-16">
+        <div className="md:flex-row md:justify-between md:mt-16">
         <div className="absolute content-center z-30 bg-palette-4 bg-opacity-95 -ml-20 sm:w-1/3 md:h-1/2 md:p-5">
           <p className="md:text-lg sm:text-sm text-left font-extralight text-gold">Hey there my name is</p>
           <div className="ml-10 py-3">
@@ -52,10 +52,10 @@ export default function Home() {
           <p className="md:text-md sm:text-sm font-light text-primary">I'm a software engineer specializing in creating solutions for users</p>
         <button className="bg-primary mt-10 p-3 border-2 sm:text-md md:font-medium text-blue rounded-lg shadow-md transition duration-300 hover:bg-palette-4 hover:text-primary active:bg-palette-5"><a href="mailto:lizlukasiewicz@gmail.com">contact me</a></button>
         </div>
-        <img src="/flushing.png" className="rounded-full -mr-10 md:flex-shrink-0"/>
+        <img src="/flushing.png" className="rounded-full md:-mr-10"/>
         </div>
        
-        <div className="md:w-3/4 grid grid-cols-2 gap-1 py-5 md:flex">
+        <div className="md:w-3/4 grid md:grid-cols-2 gap-1 py-5 md:flex">
         <img src="/image1.png" width="400" height="382" className="md:float-left md:flex-shrink-0"/>
         <div className="bg-primary md:h-96 overflow-y-auto" title="about" id="about">
           <h1 className="md:text-xl text-blue font-light md:text-center">About Me: </h1>
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="md:w-10/12 grid grid-cols-2 gap-1 md:py-5">
+        <div className="md:w-10/12 md:grid grid-cols-2 gap-1 md:py-5">
           <div className="col-span-2"><h2 className="md:text-xl md:font-light text-blue text-center">Things I've Built</h2> </div>
           <div className="bg-palette-1">
             <div><h1 className="md:text-lg font-medium text-blue hover:text-purple"><Link href="/projects/#riders-guild">Riders Guild</Link></h1>
