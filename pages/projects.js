@@ -50,7 +50,7 @@ export default function Projects() {
               <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
               <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
               </div>
-              <p>A Blog built with NextAuth for user authentication and database encryption, RESTful API functionality for posts and comments between users.<br></br> 
+              <p className="text-blue text-sm text-right">A Blog built with NextAuth for user authentication and database encryption, RESTful API functionality for posts and comments between users.<br></br> 
               Learned and implemented Next.js and launched the app for a 5-Day Sprint.
               </p>
           </div> 
@@ -61,7 +61,7 @@ export default function Projects() {
             <a href="https://github.com/lizlukasiewicz/Collab-MERN-Client" target="_blank" className="order-first"> <VscGithub className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
-            <p>The goal was to make a stripped down calendar which is easy to read at a glance. Regular events 
+            <p className="text-sm text-primary text-left">The goal was to make a stripped down calendar which is easy to read at a glance. Regular events 
               are available at the click of a button, but your daily itinerary is immediately available, which 
               is really what most people use most to stay on top of the days activities.
               <br></br>Utilized React Calendar Component to record and render Schedules stored within MongoDB that 
@@ -83,7 +83,7 @@ export default function Projects() {
             <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
-            <p>Full stack Express and Postgres app that uses Sequelize as an ORM to interact with protected 
+            <p className="text-primary text-sm text-right">Full stack Express and Postgres app that uses Sequelize as an ORM to interact with protected 
             customer data with full CRUD functionality for each user. Data is run through the Mapbox API 
             which geocodes customer addresses and renders them on map. Users are able to chart out zones 
             on the map and the app displays the corresponding zone the geocoded data is within.
@@ -100,7 +100,7 @@ export default function Projects() {
             <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" className="order-first"> <VscGithub className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
             <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
             </div> 
-            <p>Sucess! NoFace has eaten the medicine you got from the River Spirit, But now he's projectile vomiting 
+            <p className="text-sm text-blue text-left">Sucess! NoFace has eaten the medicine you got from the River Spirit, But now he's projectile vomiting 
               all the contents of his massive stomach and he's coming to get you! You are Chihiro running through the 
               bathhouse to escape the wrath of NoFace, but the other employees of the bathhouse are in your way. Avoid 
               these obstacles and make it out of the bathhouse before NoFace eats you to win the game!
