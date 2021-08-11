@@ -41,15 +41,15 @@ export default function Resume() {
       <main className="flex flex-col items-center w-full flex-1 px-20 text-center ">
         <div className="flex flex-row w-full justify-around">
             <ul>
-                <li><button className="p-3 m-2 bg-palette-5 rounded-lg text-primary transition duration-150 ease-in-out hover:bg-palette-4 transform hover:-translate-y-1 hover:scale-100"><a href="/resume.pdf" target="_blank">View PDF</a></button></li>
-                <li><button className="p-3 m-2 bg-palette-5 rounded-lg text-primary transition duration-150 ease-in-out hover:bg-palette-4 transform hover:-translate-y-1 hover:scale-100"><a href="/resume.pdf" download="/resume.pdf" target="_blank">Download PDF</a></button></li>
+                <li><button className="p-3 m-2 bg-palette-5 rounded-lg text-primary transition duration-150 ease-in-out hover:bg-palette-4 transform hover:-translate-y-1 hover:scale-100"><a href="/elizabeth-resume.pdf" target="_blank">View PDF</a></button></li>
+                <li><button className="p-3 m-2 bg-palette-5 rounded-lg text-primary transition duration-150 ease-in-out hover:bg-palette-4 transform hover:-translate-y-1 hover:scale-100"><a href="/elizabeth-resume.pdf" download="/resume.pdf" target="_blank">Download PDF</a></button></li>
             </ul>
             <ul>
-              <li><button className="p-3 m-2 bg-palette-3 rounded-lg text-primary transition duration-150 ease-in-out hover:bg-palette-4 transform hover:-translate-y-1 hover:scale-100"><a href="/resume.docx" target="_blank">View WordDoc</a></button></li>
-              <li><button className="p-3 m-2 bg-palette-3 rounded-lg text-primary transition duration-150 ease-in-out hover:bg-palette-4 transform hover:-translate-y-1 hover:scale-100"><a href="/resume.docx" download="/resume.docx" target="_blank">Download WordDoc</a></button></li>
+              <li><button className="p-3 m-2 bg-palette-3 rounded-lg text-primary transition duration-150 ease-in-out hover:bg-palette-4 transform hover:-translate-y-1 hover:scale-100"><a href="/elizabeth-resume.docx" target="_blank">View WordDoc</a></button></li>
+              <li><button className="p-3 m-2 bg-palette-3 rounded-lg text-primary transition duration-150 ease-in-out hover:bg-palette-4 transform hover:-translate-y-1 hover:scale-100"><a href="/elizabeth-resume.docx" download="/resume.docx" target="_blank">Download WordDoc</a></button></li>
             </ul>
         </div>
-            <Image src="/resume.jpg" alt="an image of authors reume" width="1000" height="1294"/>
+            <Image src="/elizabeth-resume.jpg" alt="an image of authors reume" width="1000" height="1294"/>
         </main>
         <div className="fixed items-end self-start space-y-5 bottom-10 left-20">
         <ul className="flex-col space-y-8">
