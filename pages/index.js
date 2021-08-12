@@ -11,7 +11,7 @@ import {MdPhonelink} from 'react-icons/md'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen md:py-2 bg-white">
+    <div className="flex flex-col items-stretch md:items-center min-h-full md:min-h-screen py-0 md:py-2 bg-white">
       <Head>
         <title>Elizabeth Lukasiewicz</title>
         <link rel="icon" href="/icon.png" />
@@ -41,8 +41,8 @@ export default function Home() {
       </Head>
       <Header />
       
-      <main className="flex flex-col items-center w-full flex-1 px-20 text-center ">
-        <div className="md:flex-row md:justify-between md:mt-16">
+      <main className="flex flex-col items-center w-full flex-1 px-5 md:px-20 text-center ">
+        <div className="md:flex-row justify-center md:justify-between mt-0 md:mt-16">
         <div className="absolute content-center z-30 bg-palette-4 bg-opacity-95 -ml-20 sm:w-1/3 md:h-1/2 md:p-5">
           <p className="md:text-lg sm:text-sm text-left font-extralight text-gold">Hey there my name is</p>
           <div className="ml-10 py-3">
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
        
         <div className="md:w-3/4 grid md:grid-cols-2 gap-1 py-5 md:flex">
-        <img src="/image1.png" width="400" height="382" className="md:float-left md:flex-shrink-0"/>
+        <img src="/image1.png" width="400" height="382" className="md:float-left"/>
         <div className="bg-primary md:h-96 overflow-y-auto" title="about" id="about">
           <h1 className="md:text-xl text-blue font-light md:text-center">About Me: </h1>
           <p className="text-left md:overflow-ellipsis ">As a Full-Stack Software Engineer with a background in performing arts, I am composed of 
@@ -65,50 +65,56 @@ export default function Home() {
           serving of ambition, I am always looking to challenge myself.  </p>
         </div>
       </div>
-        <div className="md:w-3/4 grid grid-cols-3 my-5 gap-4">
-          <div className="col-span-3"><h2 className="md:text-xl font-light text-blue text-left" title="tools" id="tools">Tools & Proficiencies</h2> </div>
-          <div><p className="md:text-lg font-medium">Languages</p>
+        <div className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-3 my-0 md:my-5 gap-0 md:gap-4">
+          <div className="col-span-2 md:col-span-3">
+            <h2 className="text-lg md:text-xl font-medium md:font-light text-blue text-left" title="tools" id="tools">Tools & Proficiencies</h2> </div>
+          <div className="justify-self-start">
+            <p className="text-md md:text-lg font-medium">Languages</p>
             <ul>
-              <li className="font-light md:text-md"> Javascript</li>
-              <li className="font-light md:text-md">Python</li>
-              <li className="font-light md:text-md">Typescript</li>
-              <li className="font-light md:text-md">HTML</li>
-              <li className="font-light md:text-md">CSS</li>
+              <li className="font-light text-md"> Javascript</li>
+              <li className="font-light text-md">Python</li>
+              <li className="font-light text-md">Typescript</li>
+              <li className="font-light text-md">HTML</li>
+              <li className="font-light text-md">CSS</li>
             </ul>
           </div>
-          <div><p className="md:text-lg font-medium">Libraries</p>
+          <div className="justify-self-end md:justify-self-center">
+            <p className="text-md md:text-lg font-medium">Libraries</p>
             <ul>
-              <li className="font-light md:text-md">Node</li>
-              <li className="font-light md:text-md">Axios</li>
-              <li className="font-light md:text-md">JQuery</li>
-              <li className="font-light md:text-md">Bootstrap</li>
-              <li className="font-light md:text-md">Tailwind</li>
-              <li className="font-light md:text-md">Bcrypt</li>
+              <li className="font-light text-md">Node</li>
+              <li className="font-light text-md">Axios</li>
+              <li className="font-light text-md">JQuery</li>
+              <li className="font-light text-md">Bootstrap</li>
+              <li className="font-light text-md">Tailwind</li>
+              <li className="font-light text-md">Bcrypt</li>
             </ul>
           </div>
-          <div><p className="md:text-lg font-medium">Frameworks:</p>
+          <div className="justify-self-start md:justify-self-end">
+            <p className="text-md md:text-lg font-medium">Frameworks</p>
             <ul>
-            <li className="font-light md:text-md">Express</li>
-            <li className="font-light md:text-md">React</li>
-            <li className="font-light md:text-md">Next</li>
-            <li className="font-light md:text-md">NextAuth</li>
+            <li className="font-light text-md">Express</li>
+            <li className="font-light text-md">React</li>
+            <li className="font-light text-md">Next</li>
+            <li className="font-light text-md">NextAuth</li>
             </ul>
           </div>
-          <div>
-            <ul><p className="md:text-lg font-medium">Databases:</p>
-            <li className="font-light md:text-md">MongoDB</li>
-            <li className="font-light md:text-md">Mongoose</li>
-            <li className="font-light md:text-md">PostgreSQL</li>
-            <li className="font-light md:text-md">Sequelize</li>
+          <div className="justify-self-end md:justify-self-end">
+            <p className="text-md md:text-lg font-medium">Databases</p>
+            <ul>
+            <li className="font-light text-md">MongoDB</li>
+            <li className="font-light text-md">Mongoose</li>
+            <li className="font-light text-md">PostgreSQL</li>
+            <li className="font-light text-md">Sequelize</li>
             </ul>
           </div>
-          <div><p className="md:text-lg font-medium">Other:</p>
+          <div className="col-span-2 md:col-span-1 justify-self-center md:justify-self-end">
+            <p className="text-md md:text-lg font-medium">Other</p>
             <ul>
-              <li className="font-light md:text-md">Git</li>
-              <li className="font-light md:text-md">Github</li>
-              <li className="font-light md:text-md">JSON</li>
-              <li className="font-light md:text-md">AJAX</li>
-              <li className="font-light md:text-md">RESTful Routing</li>
+              <li className="font-light text-md">Git</li>
+              <li className="font-light text-md">Github</li>
+              <li className="font-light text-md">JSON</li>
+              <li className="font-light text-md">AJAX</li>
+              <li className="font-light text-md">RESTful Routing</li>
             </ul>
           </div>
         </div>
