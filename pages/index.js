@@ -42,8 +42,8 @@ export default function Home() {
       <Header />
       
       <main className="flex flex-col items-center w-full flex-1 px-5 md:px-20 text-center ">
-        <div className="flex-row justify-center w-screen h- md:justify-between sm:mt-1" id="splash">
-        <div className="content-center left-20 top-1 bg-palette-4 bg-opacity-95 w-8/12 md:w-96 h-64 md:h-1/2 p-1 md:p-5 md:mx-20">
+        <div className="flex-row justify-center w-10/12 sm:mt-1 md:pb-72" id="splash">
+        <div className="content-center left-20 top-0 bg-palette-4 bg-opacity-95 md:w-2/5 h-64 md:h-1/2 p-1 md:p-5 md:mx-20" id="box">
           <p className="text-md md:text-lg leading-loose text-left font-light md:font-extralight text-gold">Hey there! my name is</p>
           <div className="md:ml-10 md:py-3">
           <p className="text-lg md:text-xl leading-none text-center md:text-left text-primary">Elizabeth <br></br>Lukasiewicz</p>
@@ -183,6 +183,12 @@ export default function Home() {
         #splash {
           background-image: url('/flushing.png');
           background-size: cover;
+          background-repeat: no-repeat;
+          background-position-x: -50px;
+          background-position-y: -50px;
+        }
+        #box{
+          width: 500px;
         }
       `}</style>
     </div>

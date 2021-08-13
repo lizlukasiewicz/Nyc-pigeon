@@ -8,7 +8,7 @@ export default function Header() {
         <nav className="border-b-4 border-gold w-full bg-primary">
             <div className="max-w-screen-sm md:max-w-screen-2xl mx-0 md:mx-auto md:px-4">
                 <div className="flex justify-between items-center md:py-6 space-x-5 flex-shrink md:justify-between md:space-x-5 lg:justify-between">
-                    <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                         <button type="button" className="inline-flex items-center justify-center p-2 rounded-md text-purple hover:text-blue hover:bg-palette-3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green" aria-controls="mobile-menu" aria-expanded="false">
                             <span className="sr-only">Open main menu</span>
                             <GiHamburgerMenu className="block h-6 w-6" aria-hidden="true"/>
@@ -96,4 +96,4 @@ export default function Header() {
 }
 
 // <div className="md:flex-shrink md:justify-end md:space-x-5">
-//className="block lg:hidden h-8 md:h-20 w-auto motion-safe:hover:animate-spin"
+//className="block md:hidden h-8 md:h-20 w-auto motion-safe:hover:animate-spin"
