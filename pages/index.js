@@ -42,24 +42,24 @@ export default function Home() {
       <Header />
       
       <main className="flex flex-col items-center w-full flex-1 px-5 md:px-20 text-center ">
-        <div className="md:flex-row justify-center md:justify-between mt-0 md:mt-16">
-        <div className="absolute content-center z-30 bg-palette-4 bg-opacity-95 -ml-20 sm:w-1/3 md:h-1/2 md:p-5">
-          <p className="md:text-lg sm:text-sm text-left font-extralight text-gold">Hey there my name is</p>
-          <div className="ml-10 py-3">
-          <p className="md:text-xl sm:text-lg leading-none text-left text-primary">Elizabeth <br></br>Lukasiewicz</p>
+        <div className="flex-row justify-center w-screen h- md:justify-between sm:mt-1" id="splash">
+        <div className="content-center left-20 top-1 bg-palette-4 bg-opacity-95 w-8/12 md:w-96 h-64 md:h-1/2 p-1 md:p-5 md:mx-20">
+          <p className="text-md md:text-lg leading-loose text-left font-light md:font-extralight text-gold">Hey there! my name is</p>
+          <div className="md:ml-10 md:py-3">
+          <p className="text-lg md:text-xl leading-none text-center md:text-left text-primary">Elizabeth <br></br>Lukasiewicz</p>
           </div>
-          <h4 className="md:text-lg sm:text-sm text-left text-opacity-75 font-medium text-primary">I build things for the web</h4>
-          <p className="md:text-md sm:text-sm font-light text-primary">I'm a software engineer specializing in creating solutions for users</p>
-        <button className="bg-primary mt-10 p-3 border-2 sm:text-md md:font-medium text-blue rounded-lg shadow-md transition duration-300 hover:bg-palette-4 hover:text-primary active:bg-palette-5"><a href="mailto:lizlukasiewicz@gmail.com">contact me</a></button>
+          <h4 className="text-md md:text-lg text-left text-opacity-75 text-primary">I build things for the web</h4>
+          <p className="hidden md:block text-sm md:text-md font-light text-primary">I'm a software engineer specializing in creating solutions for users</p>
+        <button className="bg-primary mt-5 md:mt-10 p-3 border-2 sm:text-md md:font-medium text-blue rounded-lg shadow-md transition duration-300 hover:bg-palette-4 hover:text-primary active:bg-palette-5"><a href="mailto:lizlukasiewicz@gmail.com">contact me</a></button>
         </div>
-        <img src="/flushing.png" className="rounded-full md:-mr-10"/>
+        
         </div>
        
-        <div className="md:w-3/4 grid md:grid-cols-2 gap-1 py-5 md:flex">
+        <div className="md:w-3/4 grid md:grid-cols-2 py-5 md:gap-x-3 md:divide-x md:divide-gold md:flex">
         <img src="/image1.png" width="400" height="382" className="md:float-left"/>
-        <div className="bg-primary md:h-96 overflow-y-auto" title="about" id="about">
-          <h1 className="md:text-xl text-blue font-light md:text-center">About Me: </h1>
-          <p className="text-left md:overflow-ellipsis ">As a Full-Stack Software Engineer with a background in performing arts, I am composed of 
+        <div className="bg-primary md:h-96 overflow-y-auto pl-5" title="about" id="about">
+          <h1 className="text-lg md:text-xl text-blue font-light md:text-center">About Me: </h1>
+          <p className="text-center md:overflow-ellipsis ">As a Full-Stack Software Engineer with a background in performing arts, I am composed of 
           strong interpersonal skills and driven by creating streamlined, user-friendly solutions with a pragmatic approach. I employ my skills 
           with back-end JavaScript and Python to create organized and automated software that is easily approachable for users. With a healthy 
           serving of ambition, I am always looking to challenge myself.  </p>
@@ -120,7 +120,7 @@ export default function Home() {
         </div>
         
         <div className="md:w-10/12 md:grid grid-cols-2 gap-1 md:py-5">
-          <div className="col-span-2"><h2 className="md:text-xl md:font-light text-blue text-center">Things I've Built</h2> </div>
+          <div className="col-span-2 py-5"><h2 className="text-lg md:text-xl md:font-light text-blue text-center">Things I've Built</h2> </div>
           <div className="bg-palette-1">
             <div><h1 className="md:text-lg font-medium text-blue hover:text-purple"><Link href="/projects/#riders-guild">Riders Guild</Link></h1>
               <p><span className="md:text-md font-medium text-blue">Next.js, MongoDB, Mongoose, NextAuth, React </span><br></br></p>
@@ -167,7 +167,7 @@ export default function Home() {
       
       
       </main>
-      <div className="md:fixed items-end self-start space-y-5 bottom-10 left-20">
+      <div className="fixed items-end self-start space-y-5 bottom-10 left-20">
         <ul className="flex-col space-y-8">
           <li> <a href="https://github.com/lizlukasiewicz" target="_blank"><VscGithubInverted className="md:text-purple transform scale-150"/></a> </li>
           <li><a href="https://www.instagram.com/nycpigeon/" target="_blank"> <GrInstagram className="md:text-purple transform scale-150"/> </a> </li>
@@ -176,9 +176,15 @@ export default function Home() {
           <li><a> <FaHackerrank className="text-purple transform scale-150"/> </a> </li>
           <li><a><SiLeetcode className="text-purple transform scale-150"/></a></li> */}
         </ul>
-        <div className="flex-col md:h-40 border-r-4 md:border-purple"></div>
+        <div className="md:flex-col md:h-40 border-r-4 md:border-purple"></div>
       </div>
       <Footer />
+      <style jsx>{`
+        #splash {
+          background-image: url('/flushing.png');
+          background-size: cover;
+        }
+      `}</style>
     </div>
   )
 }
