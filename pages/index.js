@@ -11,7 +11,7 @@ import {MdPhonelink} from 'react-icons/md'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-stretch md:items-center min-h-full md:min-h-screen py-0 md:py-2 bg-white">
+    <div className="flex flex-col static items-stretch md:items-center min-h-full md:min-h-screen py-0 md:py-2 bg-white">
       <Head>
         <title>Elizabeth Lukasiewicz</title>
         <link rel="icon" href="/icon.png" />
@@ -42,8 +42,8 @@ export default function Home() {
       <Header />
       
       <main className="flex flex-col items-center w-full flex-1 px-5 md:px-20 text-center ">
-        <div className="flex-row justify-center w-10/12 sm:mt-1 md:pb-72" id="splash">
-        <div className="content-center left-20 top-0 bg-palette-4 bg-opacity-95 md:w-2/5 h-64 md:h-1/2 p-1 md:p-5 md:mx-20" id="box">
+        <div className="flex-row justify-center md:w-10/12 sm:mt-1 md:pb-72" id="splash">
+        <div className="content-center md:left-20 top-0 bg-palette-4 bg-opacity-95 h-64 md:h-1/2 p-3 md:p-5 md:mx-20" id="box">
           <p className="text-md md:text-lg leading-loose text-left font-light md:font-extralight text-gold">Hey there! my name is</p>
           <div className="md:ml-10 md:py-3">
           <p className="text-lg md:text-xl leading-none text-center md:text-left text-primary">Elizabeth <br></br>Lukasiewicz</p>
@@ -190,6 +190,12 @@ export default function Home() {
         #box{
           width: 500px;
         }
+        @media only screen and (max-width: 650px) {
+        #box{
+          width: 350px;
+          margin: 0px;
+        }
+      }
       `}</style>
     </div>
   )
