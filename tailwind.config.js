@@ -26,9 +26,9 @@ module.exports = {
       'body': ['Roboto']
     },
     fontSize: {
-        sm: ['9px'],
+        sm: ['16px'],
         md: ['21px'],
-        lg: ['27px'],
+        lg: ['36px'],
         xl: ['47px']
     },
     scale: {
