@@ -11,7 +11,7 @@ import {MdPhonelink} from 'react-icons/md'
 
 export default function Home() {
   return (
-    <div className="flex flex-col static items-stretch md:items-center min-h-full md:min-h-screen py-0 md:py-2 bg-white">
+    <div className="flex flex-col static items-stretch sm:items-center w-screen sm:w-full min-h-screen py-0 pr-0 sm:py-2 bg-white">
       <Head>
         <title>Elizabeth Lukasiewicz</title>
         <link rel="icon" href="/icon.png" />
@@ -119,7 +119,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="md:w-10/12 md:grid grid-cols-2 gap-1 md:py-5">
+        <div className="w-full md:w-11/12 md:grid md:grid-cols-2 md:gap-1 md:py-5">
           <div className="col-span-2 py-5"><h2 className="text-lg md:text-xl md:font-light text-blue text-center">Things I've Built</h2> </div>
           <div className="bg-palette-1">
             <div><h1 className="md:text-lg font-medium text-blue hover:text-purple"><Link href="/projects/#riders-guild">Riders Guild</Link></h1>
@@ -129,7 +129,7 @@ export default function Home() {
               <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
               </div>
             </div> 
-            <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" className="p-2"  width="450" height="250"/>
+            <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" className="ml-3 mb-2"  width="500" height="300"/>
           </div>
           <div className=" bg-palette-4 ">
             <div><h1 className="md:text-lg text-primary hover:text-orange"><Link href="/projects/#falendar">Falendar</Link></h1>
@@ -172,9 +172,6 @@ export default function Home() {
           <li> <a href="https://github.com/lizlukasiewicz" target="_blank"><VscGithubInverted className="md:text-purple transform scale-150"/></a> </li>
           <li><a href="https://www.instagram.com/nycpigeon/" target="_blank"> <GrInstagram className="md:text-purple transform scale-150"/> </a> </li>
           <li><a href="https://www.linkedin.com/in/elizabeth-lukasiewicz-a2904a59/" target="_blank"> <GrLinkedin className="md:text-purple transform scale-150"/> </a> </li>
-          {/* <li><a> <FaCodepen className="text-purple transform scale-150"/> </a> </li>
-          <li><a> <FaHackerrank className="text-purple transform scale-150"/> </a> </li>
-          <li><a><SiLeetcode className="text-purple transform scale-150"/></a></li> */}
         </ul>
         <div className="md:flex-col md:h-40 border-r-4 md:border-purple"></div>
       </div>
@@ -200,3 +197,6 @@ export default function Home() {
     </div>
   )
 }
+//<li><a> <FaCodepen className="text-purple transform scale-150"/> </a> </li>
+//          <li><a> <FaHackerrank className="text-purple transform scale-150"/> </a> </li>
+//          <li><a><SiLeetcode className="text-purple transform scale-150"/></a></li>
