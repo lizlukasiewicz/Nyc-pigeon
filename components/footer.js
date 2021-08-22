@@ -2,19 +2,25 @@
 export default function Footer() {
     return(
         <footer className="flex items-center justify-center w-full h-40 bg-palette-5">
-        <ul className="">
+        <ul>
           <li className="flex items-center text-primary hover:text-orange">
             <a href="mailto:lizlukasiewicz@gmail.com">
-             <p> Email:<span className="hover:underline">lizlukasiewicz@gmail.com</span></p>
+             <p className=""> Email:<span className="hover:underline">lizlukasiewicz@gmail.com</span></p>
             </a>
           </li>
           <li className="flex items-center text-primary hover:text-orange">
-          <a>
             <p>Resume: <a href="/elizabeth-resume.pdf" download="/elizabeth-resume.pdf" target="_blank">Download</a></p>
-          </a>
           </li>
         </ul>
-        <img src="/self.png" alt="circular portrait photo" className="h-24 ml-20" />
+        <img src="/self.png" alt="circular portrait photo" className="h-16 md:h-24 ml-20"/>
+        <style jsx>{`
+          @media only screen and (max-width: 650px) {
+            footer{
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        `}</style>
       </footer>
     )
 }
