@@ -66,7 +66,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="md:hidden" id="mobile-menu" >
-                <div className="grid grid-cols-1 grid-rows-6 px-2 pt-2 pb-3 space-y-1 absolute bg-primary">
+                <div className="grid grid-cols-1 grid-rows-6 px-2 pt-2 pb-3 space-y-1 absolute bg-primary w-3/4 z-30 md:z-20">
                     <Link href="/">
                         <a className="text-purple block px-3 py-2 rounded-md text-base font-medium " aria-current="page">
                         <FaHome className="scale-150"/>
