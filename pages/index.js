@@ -41,7 +41,7 @@ export default function Home() {
       </Head>
       <Header />
       
-      <main className="flex flex-col items-center w-full flex-1 px-5 md:px-20 text-center ">
+      <main className="flex flex-col items-center w-full flex-1 px-1 md:px-20 space-y-2 md:space-y-0 text-center divide-y-2 md:divide-y-0 divide-gold md:divide-transparent divide-solid md:divide-none ">
         <div className="flex-row justify-center md:w-10/12 sm:mt-1 md:pb-72" id="splash">
         <div className="content-center md:left-20 top-0 bg-palette-4 bg-opacity-95 h-64 md:h-1/2 p-3 md:p-5 md:mx-20" id="box">
           <p className="text-md md:text-lg leading-loose text-left font-light md:font-extralight text-gold">Hey there! my name is</p>
@@ -55,9 +55,9 @@ export default function Home() {
         
         </div>
        
-        <div className="md:w-3/4 grid md:grid-cols-2 py-5 md:gap-x-3 md:divide-x md:divide-gold md:flex">
+        <div className="w-full md:w-3/4 grid md:grid-cols-2 py-5 md:gap-x-3 md:divide-x divide-gold md:divide-gold md:flex">
         <img src="/image1.png" width="400" height="382" className="md:float-left"/>
-        <div className="bg-primary md:h-96 overflow-y-auto pl-5" title="about" id="about">
+        <div className="bg-primary md:h-96 mt-5 md:mt-0 overflow-y-auto md:pl-5" title="about" id="about">
           <h1 className="text-lg md:text-xl text-blue font-light md:text-center">About Me: </h1>
           <p className="text-center md:overflow-ellipsis ">As a Full-Stack Software Engineer with a background in performing arts, I am composed of 
           strong interpersonal skills and driven by creating streamlined, user-friendly solutions with a pragmatic approach. I employ my skills 
@@ -67,7 +67,7 @@ export default function Home() {
       </div>
         <div className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-3 my-0 md:my-5 gap-0 md:gap-4">
           <div className="col-span-2 md:col-span-3">
-            <h2 className="text-lg md:text-xl font-medium md:font-light text-blue text-left" title="tools" id="tools">Tools & Proficiencies</h2> </div>
+            <h2 className="text-lg md:text-xl font-medium md:font-light text-blue text-center md:text-left" title="tools" id="tools">Tools & Proficiencies</h2> </div>
           <div className="justify-self-start">
             <p className="text-md md:text-lg font-medium">Languages</p>
             <ul>
@@ -121,47 +121,47 @@ export default function Home() {
         
         <div className="w-full md:w-11/12 md:grid md:grid-cols-2 md:gap-1 md:py-5">
           <div className="col-span-2 py-5"><h2 className="text-lg md:text-xl md:font-light text-blue text-center">Things I've Built</h2> </div>
-          <div className="bg-palette-1">
-            <div><h1 className="md:text-lg font-medium text-blue hover:text-purple"><Link href="/projects/#riders-guild">Riders Guild</Link></h1>
+          <div className="bg-palette-1 pb-2 md:pb-0">
+            <div><h1 className="text-lg font-medium text-blue hover:text-purple"><Link href="/projects/#riders-guild">Riders Guild</Link></h1>
               <p><span className="md:text-md font-medium text-blue">Next.js, MongoDB, Mongoose, NextAuth, React </span><br></br></p>
-              <div className="flex justify-evenly md:py-3">
-              <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
-              <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+              <div className="flex justify-evenly py-2 md:py-3">
+              <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+              <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
               </div>
             </div> 
-            <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" className="ml-3 mb-2"  width="500" height="300"/>
+            <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" className="md:ml-3 mb-2"  width="500" height="300"/>
           </div>
-          <div className=" bg-palette-4 ">
-            <div><h1 className="md:text-lg text-primary hover:text-orange"><Link href="/projects/#falendar">Falendar</Link></h1>
+          <div className=" bg-palette-4 pb-2 md:pb-0">
+            <div><h1 className="text-lg text-primary hover:text-orange"><Link href="/projects/#falendar">Falendar</Link></h1>
             <p><span className="font-medium text-primary">React.js, Styled-Components, MaterialUI, MongoDB, Express.js</span><br></br></p> 
-            <div className="flex justify-evenly md:py-3">
-            <a href="https://github.com/lizlukasiewicz/Collab-MERN-Client" target="_blank" className="order-first"> <VscGithub className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
-            <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <div className="flex justify-evenly py-2 md:py-3">
+            <a href="https://github.com/lizlukasiewicz/Collab-MERN-Client" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
             </div>
-            <img src="/falendar.gif" alt="a gif of the Falendar webpage" className="p-2" width="450" height="250"/>
+            <img src="/falendar.gif" alt="a gif of the Falendar webpage" className="md:ml-3 mb-2" width="500" height="300"/>
           </div>
-          <div className="bg-palette-3">
+          <div className="bg-palette-3 pb-2 md:pb-0">
             <div>
-            <h1 className="md:text-lg text-primary hover:text-orange"><Link href="/projects/#dispatch">Dispatch</Link></h1>
+            <h1 className="text-lg text-primary hover:text-orange"><Link href="/projects/#dispatch">Dispatch</Link></h1>
             <p><span className="font-medium text-primary">Sequelize, Express.js, Mapbox, PostgreSQL</span><br></br></p>
-            <div className="flex justify-evenly md:py-3">
-            <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
-            <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform md:scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <div className="flex justify-evenly py-2 md:py-3">
+            <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
             </div>
-            <img src="/dispatch.gif" alt="a gif of the Dispatch webpage" className="p-2" width="450" height="250"/>
+            <img src="/dispatch.gif" alt="a gif of the Dispatch webpage" className="md:ml-3 mb-2" width="500" height="300"/>
           </div>
-          <div className="bg-primary">
+          <div className="bg-primary pb-2 md:pb-0">
             <div>
-            <h1 className="md:text-lg text-blue hover:text-purple"><Link href="/projects/#escape-noface">Escape Noface</Link></h1>
+            <h1 className="text-lg text-blue hover:text-purple"><Link href="/projects/#escape-noface">Escape Noface</Link></h1>
             <p><span className="font-medium text-blue">JavaScript, HTML Canvas, HTML, CSS</span><br></br></p>
-            <div className="flex justify-evenly md:py-3">
-            <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" className="order-first"> <VscGithub className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
-            <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform md:scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+            <div className="flex justify-evenly py-2 md:py-3">
+            <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+            <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
             </div> 
             </div>
-            <img src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" className="p-2" width="450" height="250"/>
+            <img src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" className="md:ml-3 mb-2" width="500" height="300"/>
           </div>
         </div>
       

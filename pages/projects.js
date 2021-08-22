@@ -71,10 +71,10 @@ export default function Projects() {
             </p>
           </div>
           <div className=" bg-palette-4 md:h-96 flex items-center justify-center" id="falendar-img">
-          <img src="/falendar.gif" alt="a gif of the Falendar webpage" width="500" height="300"/>
+          <img src="/falendar.gif" alt="a gif of the Falendar webpage" width="550" height="350"/>
           </div>
           <div className="bg-palette-3 md:h-96 flex items-center justify-center" id="dispatch-img">
-          <img src="/dispatch.gif" alt="a gif of the Dispatch webpage" width="500" height="300"/>
+          <img src="/dispatch.gif" alt="a gif of the Dispatch webpage" width="550" height="350"/>
           </div>
           <div className="bg-palette-3 md:h-96 p-2 md:p-3 overflow-y-auto" id="dispatch">
             <h1 className="text-lg text-primary hover:text-orange"><a href="https://dispatch-lite.herokuapp.com/" target="_blank">Dispatch</a></h1>
@@ -109,7 +109,7 @@ export default function Projects() {
             random obstacle placement and movement, animated sprite sheets, as well as scrolling backgrounds.</p>
             </div>
             <div className="bg-primary h-auto md:h-96 flex items-center justify-center mb-10 md:mb-0" id="noface-img">
-            <img src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" width="500" height="300"/>
+            <img src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" width="550" height="350"/>
             </div>
         </div>
         </main>
