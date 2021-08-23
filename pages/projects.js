@@ -45,10 +45,10 @@ export default function Projects() {
           <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" width="550" height="350"/>
           </div>
           <div className="bg-palette-1 md:h-96 p-2 md:p-3 overflow-y-auto" id="riders-guild"><h1 className="text-lg font-medium text-blue hover:text-purple"><a href="https://capstone-nine.vercel.app/" target="_blank">Riders Guild</a></h1>
-              <h4 className="font-medium text-blue ">Next.js, MongoDB, Mongoose, NextAuth, React</h4>
+              <h4 className="text-md font-medium text-blue ">Next.js, MongoDB, Mongoose, NextAuth, React</h4>
               <div className="flex justify-evenly py-3">
-              <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
-              <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+              <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform scale-200 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+              <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-200 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
               </div>
               <p className="text-blue text-sm md:text-left">A Blog built with NextAuth for user authentication and database encryption, RESTful API functionality for posts and comments between users.<br></br> 
               Learned and implemented Next.js and launched the app for a 5-Day Sprint.
@@ -56,10 +56,10 @@ export default function Projects() {
           </div> 
           <div className=" bg-palette-4 md:h-96 p-2 md:p-3 overflow-y-auto" id="falendar">
             <h1 className="text-lg text-primary hover:text-orange"><a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank">Falendar</a></h1>
-            <h4 className="font-medium text-primary">React.js, Styled-Components, MaterialUI, MongoDB, Express.js</h4>
+            <h4 className="text-md font-medium text-primary">React.js, Styled-Components, MaterialUI, MongoDB, Express.js</h4>
             <div className="flex justify-evenly py-3">
-            <a href="https://github.com/lizlukasiewicz/Collab-MERN-Client" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
-            <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://github.com/lizlukasiewicz/Collab-MERN-Client" target="_blank" className="order-first"> <VscGithub className="transform scale-200 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-200 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
             <p className="text-sm text-primary md:text-right">The goal was to make a stripped down calendar which is easy to read at a glance. Regular events 
               are available at the click of a button, but your daily itinerary is immediately available, which 
@@ -78,10 +78,10 @@ export default function Projects() {
           </div>
           <div className="bg-palette-3 md:h-96 p-2 md:p-3 overflow-y-auto" id="dispatch">
             <h1 className="text-lg text-primary hover:text-orange"><a href="https://dispatch-lite.herokuapp.com/" target="_blank">Dispatch</a></h1>
-            <h4 className="font-medium text-primary">Sequelize, Express.js, Mapbox, PostgreSQL</h4>
+            <h4 className="text-md font-medium text-primary">Sequelize, Express.js, Mapbox, PostgreSQL</h4>
             <div className="flex justify-evenly py-3">
-            <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
-            <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform scale-200 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform scale-200 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
             </div>
             <p className="text-primary text-sm md:text-left">Full stack Express and Postgres app that uses Sequelize as an ORM to interact with protected 
             customer data with full CRUD functionality for each user. Data is run through the Mapbox API 
@@ -95,10 +95,10 @@ export default function Projects() {
           </div>
             <div className="bg-primary md:h-96 p-2 md:p-3 overflow-y-auto" id="escape-noface"> 
             <h1 className="text-lg font-medium text-blue hover:text-purple"><a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank">Escape Noface</a></h1>
-            <h4 className="font-medium text-blue">JavaScript, HTML Canvas, HTML, CSS</h4>
+            <h4 className="text-md font-medium text-blue">JavaScript, HTML Canvas, HTML, CSS</h4>
             <div className="flex justify-evenly py-3">
-            <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
-            <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+            <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" className="order-first"> <VscGithub className="transform scale-200 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+            <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform scale-200 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
             </div> 
             <p className="text-sm text-blue md:text-right">Sucess! NoFace has eaten the medicine you got from the River Spirit, But now he's projectile vomiting 
               all the contents of his massive stomach and he's coming to get you! You are Chihiro running through the 

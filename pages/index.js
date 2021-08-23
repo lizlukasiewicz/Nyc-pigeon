@@ -65,7 +65,52 @@ export default function Home() {
           serving of ambition, I am always looking to challenge myself.  </p>
         </div>
       </div>
-        <div className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-3 my-0 md:my-5 gap-0 md:gap-4">
+      <div className="w-full md:w-11/12 md:grid md:grid-cols-2 md:gap-1 md:py-5">
+          <div className="col-span-2 py-5"><h2 className="text-lg md:text-xl md:font-light text-blue text-center">Things I've Built</h2> </div>
+          <div className="bg-palette-1 pb-2 md:pb-0">
+            <div><h1 className="text-lg font-medium text-blue hover:text-purple"><Link href="/projects/#riders-guild">Riders Guild</Link></h1>
+              <p><span className="md:text-md font-medium text-blue">Next.js, MongoDB, Mongoose, NextAuth, React </span><br></br></p>
+              <div className="flex justify-evenly py-2 md:py-3">
+              <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+              <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+              </div>
+            </div> 
+            <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" className="md:ml-3 mb-2"  width="500" height="300"/>
+          </div>
+          <div className=" bg-palette-4 pb-2 md:pb-0">
+            <div><h1 className="text-lg text-primary hover:text-orange"><Link href="/projects/#falendar">Falendar</Link></h1>
+            <p><span className="font-medium text-primary">React.js, Styled-Components, MaterialUI, MongoDB, Express.js</span><br></br></p> 
+            <div className="flex justify-evenly py-2 md:py-3">
+            <a href="https://github.com/lizlukasiewicz/Collab-MERN-Client" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            </div>
+            </div>
+            <img src="/falendar.gif" alt="a gif of the Falendar webpage" className="md:ml-3 mb-2" width="500" height="300"/>
+          </div>
+          <div className="bg-palette-3 pb-2 md:pb-0">
+            <div>
+            <h1 className="text-lg text-primary hover:text-orange"><Link href="/projects/#dispatch">Dispatch</Link></h1>
+            <p><span className="font-medium text-primary">Sequelize, Express.js, Mapbox, PostgreSQL</span><br></br></p>
+            <div className="flex justify-evenly py-2 md:py-3">
+            <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
+            </div>
+            </div>
+            <img src="/dispatch.gif" alt="a gif of the Dispatch webpage" className="md:ml-3 mb-2" width="500" height="300"/>
+          </div>
+          <div className="bg-primary pb-2 md:pb-0">
+            <div>
+            <h1 className="text-lg text-blue hover:text-purple"><Link href="/projects/#escape-noface">Escape Noface</Link></h1>
+            <p><span className="font-medium text-blue">JavaScript, HTML Canvas, HTML, CSS</span><br></br></p>
+            <div className="flex justify-evenly py-2 md:py-3">
+            <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+            <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
+            </div> 
+            </div>
+            <img src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" className="md:ml-3 mb-2" width="500" height="300"/>
+          </div>
+        </div>
+        <div className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-3 my-0 md:my-5 pb-5 gap-0 md:gap-4">
           <div className="col-span-2 md:col-span-3">
             <h2 className="text-lg md:text-xl font-medium md:font-light text-blue text-center md:text-left" title="tools" id="tools">Tools & Proficiencies</h2> </div>
           <div className="justify-self-start">
@@ -118,54 +163,6 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        
-        <div className="w-full md:w-11/12 md:grid md:grid-cols-2 md:gap-1 md:py-5">
-          <div className="col-span-2 py-5"><h2 className="text-lg md:text-xl md:font-light text-blue text-center">Things I've Built</h2> </div>
-          <div className="bg-palette-1 pb-2 md:pb-0">
-            <div><h1 className="text-lg font-medium text-blue hover:text-purple"><Link href="/projects/#riders-guild">Riders Guild</Link></h1>
-              <p><span className="md:text-md font-medium text-blue">Next.js, MongoDB, Mongoose, NextAuth, React </span><br></br></p>
-              <div className="flex justify-evenly py-2 md:py-3">
-              <a href="https://github.com/lizlukasiewicz/capstone" target="_blank" className="order-first"><VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
-              <a href="https://capstone-nine.vercel.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
-              </div>
-            </div> 
-            <img src="/riders-guild.gif" alt="a gif of the Riders Guild webpage" className="md:ml-3 mb-2"  width="500" height="300"/>
-          </div>
-          <div className=" bg-palette-4 pb-2 md:pb-0">
-            <div><h1 className="text-lg text-primary hover:text-orange"><Link href="/projects/#falendar">Falendar</Link></h1>
-            <p><span className="font-medium text-primary">React.js, Styled-Components, MaterialUI, MongoDB, Express.js</span><br></br></p> 
-            <div className="flex justify-evenly py-2 md:py-3">
-            <a href="https://github.com/lizlukasiewicz/Collab-MERN-Client" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
-            <a href="https://60f1ef3a5668050007a6b11d--condescending-lamarr-3bcb2c.netlify.app/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
-            </div>
-            </div>
-            <img src="/falendar.gif" alt="a gif of the Falendar webpage" className="md:ml-3 mb-2" width="500" height="300"/>
-          </div>
-          <div className="bg-palette-3 pb-2 md:pb-0">
-            <div>
-            <h1 className="text-lg text-primary hover:text-orange"><Link href="/projects/#dispatch">Dispatch</Link></h1>
-            <p><span className="font-medium text-primary">Sequelize, Express.js, Mapbox, PostgreSQL</span><br></br></p>
-            <div className="flex justify-evenly py-2 md:py-3">
-            <a href="https://github.com/lizlukasiewicz/dispatch" target="_blank" > <VscGithub className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
-            <a href="https://dispatch-lite.herokuapp.com/" target="_blank" > <MdPhonelink className="transform scale-150 text-primary transition duration-150 ease-in-out hover:text-orange"/></a>
-            </div>
-            </div>
-            <img src="/dispatch.gif" alt="a gif of the Dispatch webpage" className="md:ml-3 mb-2" width="500" height="300"/>
-          </div>
-          <div className="bg-primary pb-2 md:pb-0">
-            <div>
-            <h1 className="text-lg text-blue hover:text-purple"><Link href="/projects/#escape-noface">Escape Noface</Link></h1>
-            <p><span className="font-medium text-blue">JavaScript, HTML Canvas, HTML, CSS</span><br></br></p>
-            <div className="flex justify-evenly py-2 md:py-3">
-            <a href="https://github.com/lizlukasiewicz/Project-1-escape-Noface" target="_blank" className="order-first"> <VscGithub className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
-            <a href="https://lizlukasiewicz.github.io/Project-1-escape-Noface/" target="_blank" className="order-last"><MdPhonelink className="transform scale-150 text-blue transition duration-150 ease-in-out hover:text-purple"/></a>
-            </div> 
-            </div>
-            <img src="/escape-noface.gif" alt="a gif of the Escape Noface webpage" className="md:ml-3 mb-2" width="500" height="300"/>
-          </div>
-        </div>
-      
-      
       </main>
       <div className="fixed items-end self-start space-y-1 md:space-y-5 bottom-8 md:bottom-10 left-0 md:left-10 bg-primary md:bg-transparent bg-opacity-75 md:bg-opacity-0 rounded-lg p-2 md:p-0">
         <ul className="flex-col space-y-8">
