@@ -9,7 +9,7 @@ export default function Footer() {
             </a>
           </li>
           <li className="flex items-center text-primary hover:text-orange">
-            <p>Resume: <a href="/elizabeth-resume.pdf" download="/elizabeth-resume.pdf" target="_blank">Download</a></p>
+            <p>Resume: <a href="/e-lukasiewicz.pdf" download="/e-lukasiewicz.pdf" target="_blank">Download</a></p>
           </li>
         </ul>
         <img src="/self.png" alt="circular portrait photo" className="h-16 md:h-24 ml-20"/>
